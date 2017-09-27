@@ -1,0 +1,67 @@
+{
+  "name": "aurelia-plugins-password-viewer",
+  "version": "2.5.0",
+  "description": "A password viewer plugin for Aurelia.",
+  "keywords": [
+    "aurelia",
+    "plugins",
+    "plugin",
+    "password",
+    "viewer"
+  ],
+  "homepage": "https://github.com/aurelia-plugins/aurelia-plugins-password-viewer",
+  "license": "MIT",
+  "author": "Bart Lenaerts <bart@itprosolutions.be> (http://itprosolutions.be/)",
+  "bugs": {
+    "url": "https://github.com/aurelia-plugins/aurelia-plugins-password-viewer/issues"
+  },
+  "main": "dist/commonjs/aurelia-plugins-password-viewer.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aurelia-plugins/aurelia-plugins-password-viewer.git"
+  },
+  "dependencies": {
+    "aurelia-dependency-injection": "^1.3.1",
+    "aurelia-pal": "^1.3.0",
+    "aurelia-templating": "^1.4.2"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-typescript": "^3.1.7",
+    "run-sequence": "^1.2.2",
+    "typescript": "^2.4.1"
+  },
+  "scripts": {
+    "build": "gulp",
+    "clean": "rm -rf node_modules && yarn"
+  },
+  "jspm": {
+    "registry": "npm",
+    "main": "aurelia-plugins-password-viewer",
+    "format": "amd",
+    "directories": {
+      "dist": "dist/amd"
+    },
+    "dependencies": {
+      "aurelia-dependency-injection": "^1.3.1",
+      "aurelia-pal": "^1.3.0",
+      "aurelia-templating": "^1.4.2"
+    }
+  },
+  "aurelia": {
+    "build": {
+      "resources": [
+        "aurelia-plugins-password-viewer/aurelia-plugins-password-viewer-element"
+      ]
+    }
+  }
+}
