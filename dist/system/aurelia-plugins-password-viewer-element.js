@@ -95,7 +95,7 @@ System.register(['aurelia-binding', 'aurelia-templating'], function (_export, _c
       }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'placeholder', [bindable], {
         enumerable: true,
         initializer: function initializer() {
-          return 'Type password';
+          return 'Enter password';
         }
       }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'value', [_dec2], {
         enumerable: true,

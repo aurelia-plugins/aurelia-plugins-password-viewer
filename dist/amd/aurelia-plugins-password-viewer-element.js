@@ -90,7 +90,7 @@ define(['exports', 'aurelia-binding', 'aurelia-templating'], function (exports, 
   }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'placeholder', [_aureliaTemplating.bindable], {
     enumerable: true,
     initializer: function initializer() {
-      return 'Type password';
+      return 'Enter password';
     }
   }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'value', [_dec2], {
     enumerable: true,

@@ -15,7 +15,7 @@ export class PasswordViewer {
   // BINDABLE PROPERTIES
   @bindable class;
   @bindable $id;
-  @bindable placeholder = 'Type password';
+  @bindable placeholder = 'Enter password';
   @bindable({ defaultBindingMode: bindingMode.twoWay }) value;
 
   // PUBLIC METHODS

@@ -8,5 +8,5 @@ exports.configure = configure;
 var _aureliaPal = require('aurelia-pal');
 
 function configure(aurelia) {
-  aurelia.globalResources(_aureliaPal.PLATFORM.moduleName('./aurelia-plugins-password-viewer-element'));
+  aurelia.globalResources([_aureliaPal.PLATFORM.moduleName('./aurelia-plugins-password-viewer-element')]);
 }

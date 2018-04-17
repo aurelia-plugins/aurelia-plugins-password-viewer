@@ -75,7 +75,7 @@ export let PasswordViewer = (_dec = customElement('aup-password-viewer'), _dec2 
 }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'placeholder', [bindable], {
   enumerable: true,
   initializer: function () {
-    return 'Type password';
+    return 'Enter password';
   }
 }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'value', [_dec2], {
   enumerable: true,

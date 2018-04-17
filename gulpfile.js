@@ -21,16 +21,17 @@ gulp.task('build', () => run('clean', 'build-html', modules.map(module => `build
 
 
 // TASKS - BUILD BABEL
-for (const module of modules)
+modules.forEach(module => {
   gulp.task(`build-babel-${module}`, () =>
     gulp.src(paths.js)
       .pipe(babel({
         comments: false,
         plugins: module === 'es2015' ? ['transform-decorators-legacy'] : ['transform-decorators-legacy', `transform-es2015-modules-${module === 'system' ? 'systemjs' : module}`],
-        presets: module === 'es2015' ? ['stage-1'] : [['es2015', { loose: true }], 'stage-1']
+        presets: module === 'es2015' ? ['stage-1'] : [['env', { loose: true }], 'stage-1']
       }))
       .pipe(gulp.dest(`${paths.output}${module}`))
   );
+});
 
 
 // TASK - BUILD D.TS
