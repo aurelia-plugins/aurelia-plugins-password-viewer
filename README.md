@@ -10,7 +10,7 @@ A password viewer plugin for Aurelia.
 npm install aurelia-plugins-password-viewer --save
 ```
 
-When using Aurelia CLI add the following dependency to `aurelia.json`:
+When using Aurelia CLI add the following dependency to `aurelia.json` as described in the [documentation](http://aurelia.io/docs/build-systems/aurelia-cli#adding-client-libraries-to-your-project):
 
 ```json
 {
@@ -41,13 +41,15 @@ bower install aurelia-plugins-password-viewer
 Inside of your `main.js` or `main.ts` file simply load the plugin inside of the configure method using `.plugin()`.
 
 ```javascript
+import {PLATFORM} from 'aurelia-framework';
+
 export async function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging();
 
   aurelia.use
-    .plugin('aurelia-plugins-password-viewer');
+    .plugin(PLATFORM.moduleName('aurelia-plugins-password-viewer'));
 
   await aurelia.start();
   aurelia.setRoot('app');
